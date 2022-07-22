@@ -1,0 +1,75 @@
+@media screen and (min-width: 1440px) {
+    body{
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .container{
+        width: 77%;
+        grid-template-columns: 23% 23% 23% 23%;
+        gap: 2rem;
+        justify-content: center;
+        margin: 0 auto;
+
+        .menu-card{
+            grid-row: 1/3;
+            grid-column: unset;
+            // height: max-content;
+
+            .card-report{
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 2.4rem;
+                height: 70%;
+
+                img{
+                    width: 5.3rem;
+                }
+                .report{
+                    gap: .3rem;
+                    p{
+                        font-size: .9rem;
+                    }
+                    .name{
+                        font-size: 2.5rem;
+                        margin-bottom: 2.8rem;
+                    }
+                }
+            }
+            .menu{
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1.4rem;
+            }
+        }
+        .activities-card{
+            height: 100%;
+            display: flex;
+
+            .activity{
+               margin-top: 2.85rem;
+               padding: 1.75rem;
+               width: 100%;
+
+               .row{
+                margin-bottom: 1.4rem;
+               }
+
+               .row-2{
+                    gap: .55rem;
+                .hours{
+                    font-size: 3.6rem;
+                }
+                .description{
+                    font-size: .9rem;
+                }
+               }
+            }
+        }
+    }
+    
+}
